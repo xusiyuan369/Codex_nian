@@ -1,0 +1,6 @@
+# 先进入 XuCodex 文件夹。如果文件夹在 Android 下载目录：
+termux-setup-storage
+cd ~/storage/downloads/XuCodex
+
+# 一键安装 Codex CLI、安装 xu，然后启动 xu：
+pkg update -y && pkg upgrade -y && pkg install -y nodejs git ripgrep curl jq openssh nano && npm install -g @openai/codex undici && mkdir -p ~/.codex && cp ./xu "$PREFIX/bin/xu" && chmod +x "$PREFIX/bin/xu" && xu
